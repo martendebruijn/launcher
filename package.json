@@ -18,8 +18,8 @@
   "scripts": {
     "dev": "parcel",
     "build": "parcel build",
-    "lint:style": "stylelint **/*.scss",
-    "lint:es": "eslint **/*.js",
+    "lint:style": "stylelint src/**/*.scss",
+    "lint:es": "eslint src/**/*.js",
     "lint": "npm run lint:style & npm run lint:es"
   },
   "repository": {
