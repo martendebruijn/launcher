@@ -1,0 +1,38 @@
+{
+  "name": "landing-page",
+  "description": "Personal landing page",
+  "version": "1.0.0",
+  "source": "src/index.html",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.5.0",
+    "eslint": "^8.15.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "parcel": "^2.5.0",
+    "prettier": "2.6.2",
+    "stylelint": "^14.8.2",
+    "stylelint-config-prettier-scss": "^0.0.1",
+    "stylelint-config-standard-scss": "^3.0.0"
+  },
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build",
+    "lint:style": "stylelint **/*.scss",
+    "lint:es": "eslint **/*.js",
+    "lint": "npm run lint:style & npm run lint:es"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martendebruijn/landing-page.git"
+  },
+  "keywords": [
+    "landing-page"
+  ],
+  "author": "Marten de Bruijn <marten@martendebruijn.nl>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/martendebruijn/landing-page/issues"
+  },
+  "homepage": "https://github.com/martendebruijn/landing-page#readme"
+}
