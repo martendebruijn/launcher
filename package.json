@@ -19,7 +19,7 @@
   },
   "scripts": {
     "dev": "parcel",
-    "build": "parcel build",
+    "build": "rm -rf dist/* && parcel build",
     "lint:style": "stylelint src/**/*.scss",
     "lint:es": "eslint src/**/*.js",
     "lint": "npm run lint:style & npm run lint:es"
