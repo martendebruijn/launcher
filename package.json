@@ -10,10 +10,12 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "parcel": "^2.5.0",
+    "postcss": "^8.4.13",
     "prettier": "2.6.2",
     "stylelint": "^14.8.2",
     "stylelint-config-prettier-scss": "^0.0.1",
-    "stylelint-config-standard-scss": "^3.0.0"
+    "stylelint-config-standard-scss": "^3.0.0",
+    "tailwindcss": "^3.0.24"
   },
   "scripts": {
     "dev": "parcel",
@@ -34,8 +36,5 @@
   "bugs": {
     "url": "https://github.com/martendebruijn/landing-page/issues"
   },
-  "homepage": "https://github.com/martendebruijn/landing-page#readme",
-  "dependencies": {
-    "normalize.css": "^8.0.1"
-  }
+  "homepage": "https://github.com/martendebruijn/landing-page#readme"
 }
