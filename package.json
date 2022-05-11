@@ -1,5 +1,5 @@
 {
-  "name": "landing-page",
+  "name": "launcher",
   "description": "Personal landing page",
   "version": "1.0.0",
   "source": "src/index.html",
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/martendebruijn/landing-page.git"
+    "url": "git+https://github.com/martendebruijn/launcher.git"
   },
   "keywords": [
     "landing-page"
@@ -34,7 +34,7 @@
   "author": "Marten de Bruijn <marten@martendebruijn.nl>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/martendebruijn/landing-page/issues"
+    "url": "https://github.com/martendebruijn/launcher/issues"
   },
-  "homepage": "https://github.com/martendebruijn/landing-page#readme"
+  "homepage": "https://github.com/martendebruijn/launcher#readme"
 }
