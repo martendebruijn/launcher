@@ -1,12 +1,33 @@
 <!DOCTYPE html>
-<html lang="nl-NL">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Person landingpage</title>
-    <link rel="stylesheet" href="./assets/style/global.scss" />
-    <script src="./js/index.js" type="module"></script>
+    <title>Launcher</title>
+    <link rel="stylesheet" href="./assets/style/index.css" />
+    <script src="./index.js" type="module"></script>
   </head>
-  <body></body>
+
+  <body class="px-8 py-4">
+    <div id="app">
+      <div id="greeting"></div>
+      <ul
+        id="grid"
+        class="grid grid-cols-1 gap-8 pt-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3"
+      ></ul>
+    </div>
+
+    <template id="button-component">
+      <link rel="stylesheet" href="./assets/style/index.css" />
+      <a
+        class="inline-flex items-center justify-center h-full gap-2 px-4 py-2 transition-colors rounded-md"
+      >
+        <span data-name="iconWrapper" class="flex w-8 h-8"
+          ><img width="32" height="32"
+        /></span>
+        <span data-name="text"></span
+      ></a>
+    </template>
+  </body>
 </html>
