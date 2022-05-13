@@ -16,6 +16,7 @@
   "scripts": {
     "dev": "parcel",
     "build": "rm -rf dist/* && parcel build",
+    "clear": "rm -rf dist/*",
     "lint:style": "stylelint src/**/*.scss",
     "lint:es": "eslint src/**/*.js",
     "lint": "npm run lint:style & npm run lint:es"
