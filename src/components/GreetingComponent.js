@@ -17,7 +17,8 @@ export default class GreetingComponent extends HTMLElement {
     const template = document.getElementById('greeting-component')
     const shadow = this.attachShadow({ mode: 'open' })
     const copy = template.content.cloneNode(true)
-    this.classList.add('inline-block')
+    const cssClasses = ['inline-block', 'dark:text-slate-100']
+    this.classList.add(...cssClasses)
     const elements = {
       emoji: copy.querySelector('span'),
       greeting: copy.querySelector('div:first-child'),
