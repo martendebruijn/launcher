@@ -30,34 +30,38 @@ export default class ButtonComponent extends HTMLElement {
       text: copy.querySelector('[data-name="text"]'),
     }
 
-    let classNames
+    const classNames = [
+      'dark:bg-gray-200',
+      'dark:text-gray-900',
+      'dark:hover:bg-gray-400',
+      'dark:hover:text-gray-100',
+    ]
     switch (props.color) {
       case 'red':
-        classNames = [
+        classNames.push(
           'bg-red-400',
           'text-red-900',
           'hover:bg-red-500',
-          'hover:text-red-100',
-        ]
+          'hover:text-red-100'
+        )
         break
       case 'yellow':
-        classNames = [
+        classNames.push(
           'bg-yellow-400',
           'text-yellow-900',
           'hover:bg-yellow-500',
-          'hover:text-yellow-100',
-        ]
+          'hover:text-yellow-100'
+        )
         break
       default:
-        classNames = [
+        classNames.push(
           'bg-gray-400',
           'text-gray-900',
           'hover:bg-gray-500',
-          'hover:text-gray-100',
-        ]
+          'hover:text-gray-100'
+        )
         break
     }
-
     classNames.forEach((className) => {
       elements.link.classList.add(className)
     })
