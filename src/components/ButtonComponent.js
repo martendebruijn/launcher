@@ -29,8 +29,7 @@ export default class ButtonComponent extends HTMLElement {
       icon: copy.querySelector('img'),
       text: copy.querySelector('[data-name="text"]'),
     }
-
-    const classNames = [
+    const cssClasses = [
       'dark:bg-gray-200',
       'dark:text-gray-900',
       'dark:hover:bg-gray-400',
@@ -38,7 +37,7 @@ export default class ButtonComponent extends HTMLElement {
     ]
     switch (props.color) {
       case 'red':
-        classNames.push(
+        cssClasses.push(
           'bg-red-400',
           'text-red-900',
           'hover:bg-red-500',
@@ -46,7 +45,7 @@ export default class ButtonComponent extends HTMLElement {
         )
         break
       case 'yellow':
-        classNames.push(
+        cssClasses.push(
           'bg-yellow-400',
           'text-yellow-900',
           'hover:bg-yellow-500',
@@ -54,7 +53,7 @@ export default class ButtonComponent extends HTMLElement {
         )
         break
       default:
-        classNames.push(
+        cssClasses.push(
           'bg-gray-400',
           'text-gray-900',
           'hover:bg-gray-500',
@@ -62,9 +61,7 @@ export default class ButtonComponent extends HTMLElement {
         )
         break
     }
-    classNames.forEach((className) => {
-      elements.link.classList.add(className)
-    })
+    elements.link.classList.add(...cssClasses)
 
     elements.link.href = props.url
     elements.icon.src = props.img.url
