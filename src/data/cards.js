@@ -28,7 +28,7 @@ export default [
       {
         url: 'https://netflix.com/browse/',
         img: {
-          url: 'https://cdn.svgporn.com/logos/netflix-icon.svg',
+          url: 'https://cdn.svgporn.com/logos/youtube-icon.svg',
           alt: 'YouTube logo',
         },
         text: 'YouTube',
@@ -36,7 +36,7 @@ export default [
       {
         url: 'https://youtube.com/feed/subscriptions/',
         img: {
-          url: 'https://cdn.svgporn.com/logos/youtube-icon.svg',
+          url: 'https://cdn.svgporn.com/logos/netflix-icon.svg',
           alt: 'Netflix logo',
         },
         text: 'Netflix',
