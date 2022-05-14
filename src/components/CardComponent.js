@@ -27,17 +27,21 @@ export default class CardComponent extends HTMLElement {
       list: copy.querySelector('ul'),
       wrapper: copy.querySelector('div'),
     }
-
-    let classNames
+    const classNames = [
+      'dark:bg-slate-700',
+      'dark:text-gray-100',
+      'dark:border-2',
+      'dark:border-white',
+    ]
     switch (props.color) {
       case 'red':
-        classNames = ['bg-red-200', 'text-red-900']
+        classNames.push('bg-red-200', 'text-red-900')
         break
       case 'yellow':
-        classNames = ['bg-yellow-200', 'text-yellow-900']
+        classNames.push('bg-yellow-200', 'text-yellow-900')
         break
       default:
-        classNames = ['bg-gray-200', 'text-gray-900']
+        classNames.push('bg-gray-200', 'text-gray-900')
         break
     }
     classNames.forEach((className) => {
