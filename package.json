@@ -8,6 +8,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
+    "gh-pages": "^4.0.0",
     "parcel": "^2.5.0",
     "postcss": "^8.4.13",
     "prettier": "2.6.2",
@@ -15,11 +16,13 @@
   },
   "scripts": {
     "dev": "parcel",
-    "build": "rm -rf dist/* && parcel build",
+    "build": "rm -rf dist/* && parcel build --public-url ./",
     "clear": "rm -rf dist/*",
     "lint:style": "stylelint src/**/*.scss",
     "lint:es": "eslint src/**/*.js",
-    "lint": "npm run lint:style & npm run lint:es"
+    "lint": "npm run lint:style & npm run lint:es",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
