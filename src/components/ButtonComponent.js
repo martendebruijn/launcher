@@ -10,7 +10,6 @@
  *     - `url`: String - image url
  *     - `alt`: String - image alt text
  * - `text`: String - button text
- *
  */
 export default class ButtonComponent extends HTMLElement {
   /**
