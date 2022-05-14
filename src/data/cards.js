@@ -26,7 +26,7 @@ export default [
     color: 'red',
     buttons: [
       {
-        url: 'https://netflix.com/browse/',
+        url: 'https://youtube.com/feed/subscriptions/',
         img: {
           url: 'https://cdn.svgporn.com/logos/youtube-icon.svg',
           alt: 'YouTube logo',
@@ -34,7 +34,7 @@ export default [
         text: 'YouTube',
       },
       {
-        url: 'https://youtube.com/feed/subscriptions/',
+        url: 'https://netflix.com/browse/',
         img: {
           url: 'https://cdn.svgporn.com/logos/netflix-icon.svg',
           alt: 'Netflix logo',
