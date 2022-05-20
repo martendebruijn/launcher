@@ -23,7 +23,7 @@ Please do not contribute to this repo.
 ## Build with
 
 - [eslint](https://eslint.org/) - JS linter
-- [gh-pages](https://github.com/tschaub/gh-pages) - Publishing to GitHub pages
+- [gh-pages](https://github.com/tschaub/gh-pages) - Publish tool for GitHub pages
 - [parcel](https://parceljs.org/) - Build tool
 - [postcss](https://postcss.org/) - CSS transformer
 - [prettier](https://prettier.io/) - Code formatter
