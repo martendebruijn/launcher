@@ -1,3 +1,4 @@
+@import './blob.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

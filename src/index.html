@@ -21,7 +21,10 @@
 
   <body class="px-8 py-4 dark:bg-slate-900">
     <div id="app">
-      <div id="greeting"></div>
+      <div class="flex items-center justify-between">
+        <div id="greeting"></div>
+        <span id="blob" class="w-36 h-36 blob"></span>
+      </div>
       <ul
         id="grid"
         class="grid grid-cols-1 gap-8 pt-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3"
@@ -57,6 +60,39 @@
         /></span>
         <span data-name="text"></span
       ></a>
+    </template>
+
+    <template id="select-menu">
+      <link rel="stylesheet" href="./assets/style/index.css" />
+      <button
+        type="button"
+        aria-haspopup="listbox"
+        aria-expanded="false"
+        aria-labelledby="listbox-label"
+      >
+        <!-- keydown.arrow-up.stop.prevent keydown.arrow-down.stop.prevent click -->
+        <!-- active -->
+        <!-- icon -->
+      </button>
+      <!-- transition -->
+      <ul
+        tabindex="-1"
+        role="listbox"
+        aria-labelledby="listbox-label"
+        aria-activedescendant="listbox-option-3"
+      >
+        <!-- click.away keydown.enter.stop.prevent keydown.space.stop.prevent keydown.escape keydown.arrow-up.prevent keydown.arrow-down.prevent -->
+        <!-- highlighted / not highlighted -->
+        <!-- id moet in component aangemaakt worden -->
+        <li id="listbox-option-0" role="option">
+          <!-- click mouseenter mouseleave -->
+          <!-- a11y linter gaat zeiken over click maar geen key ev en mouseenter mouseleave maar geen blur -->
+          <!-- option -->
+          <!-- checkmark -->
+        </li>
+        <!-- more items -->
+      </ul>
+      <!-- /transition -->
     </template>
   </body>
 </html>
