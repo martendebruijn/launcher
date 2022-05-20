@@ -33,6 +33,6 @@ export default {
     // 23:59 = 1439 minutes / 100 = 14.39
     const lightness = totalMinutes / 14.39
     const rounded = Math.round(lightness)
-    return rounded
+    return 100 - rounded
   },
 }
