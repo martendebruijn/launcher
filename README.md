@@ -1,6 +1,6 @@
 # launcher
 
-Personal landing page
+After using a couple of frameworks (Angular/Vue/React) I noticed that I had never used good old web components. That's why I decided to build this personal landing page with web components.
 
 ## Table of Contents
 
@@ -8,6 +8,7 @@ Personal landing page
   - [Table of Contents](#table-of-contents)
   - [About this project](#about-this-project)
   - [Contributing](#contributing)
+  - [Build with](#build-with)
   - [Authors](#authors)
   - [License](#license)
 
@@ -18,6 +19,15 @@ This is a personal landing page.
 ## Contributing
 
 Please do not contribute to this repo.
+
+## Build with
+
+- [eslint](https://eslint.org/) - JS linter
+- [gh-pages](https://github.com/tschaub/gh-pages) - Publishing to GitHub pages
+- [parcel](https://parceljs.org/) - Build tool
+- [postcss](https://postcss.org/) - CSS transformer
+- [prettier](https://prettier.io/) - Code formatter
+- [tailwindcss](https://tailwindcss.com/) - CSS utility framework
 
 ## Authors
 
