@@ -18,13 +18,9 @@
     <link rel="stylesheet" href="./assets/style/index.css" />
     <script src="./index.js" type="module"></script>
   </head>
-
   <body class="px-8 py-4 dark:bg-slate-900">
     <div id="app">
-      <div class="flex items-center justify-between">
-        <div id="greeting"></div>
-        <span id="blob" class="w-36 h-36 blob"></span>
-      </div>
+      <div id="greeting"></div>
       <ul
         id="grid"
         class="grid grid-cols-1 gap-8 pt-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3"
@@ -33,7 +29,11 @@
 
     <template id="greeting-component">
       <link rel="stylesheet" href="./assets/style/index.css" />
-      <span aria-hidden="true" class="text-4xl">👋</span>
+      <span
+        aria-hidden="true"
+        class="flex items-center justify-center w-16 h-16 text-4xl shadow blob"
+        >👋</span
+      >
       <h1 class="pt-4 text-4xl">
         <div class="pb-1 font-light" data-name="greeting">Goodday</div>
         <div class="font-bold">Marten</div>

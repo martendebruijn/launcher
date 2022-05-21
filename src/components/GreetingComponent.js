@@ -1,3 +1,6 @@
+import blob from '../modules/blob'
+import temps from '../data/averageTemp' // Replace with API
+
 /**
  * GreetingComponent
  *
@@ -39,6 +42,15 @@ export default class GreetingComponent extends HTMLElement {
       text.greeting = 'Goodafternoon'
     }
 
+    const monthIndex = now.getMonth()
+    const { temp } = temps[monthIndex]
+
+    const [hue, saturation, lightness] = [
+      blob.getHue(),
+      blob.getSaturation(temp),
+      blob.getLightness(),
+    ]
+    elements.emoji.style.backgroundColor = `hsl(${hue}, ${saturation}%, ${lightness}%)`
     elements.emoji.textContent = text.emoji
     elements.greeting.textContent = text.greeting
     shadow.appendChild(copy)
