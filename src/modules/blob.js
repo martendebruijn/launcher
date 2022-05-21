@@ -14,13 +14,13 @@ export default {
     return rounded
   },
   getSaturation(curr) {
-    let normalize = curr
-    if (curr < -10) {
-      normalize = -10
-    } else if (curr > 30) {
-      normalize = 30
-    }
     const [min, max] = [-10, 30]
+    let normalize = curr
+    if (curr < min) {
+      normalize = min
+    } else if (curr > max) {
+      normalize = max
+    }
     const saturation = normalize / ((max - min) / 100)
     const rounded = Math.round(saturation)
     return rounded
